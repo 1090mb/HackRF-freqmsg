@@ -124,7 +124,8 @@ class HackRFTransmitter:
         if self.hackrf:
             try:
                 self.hackrf.close()
-            except:
+            except Exception:
+                # Silently ignore errors during cleanup as device may already be closed
                 pass
 
 
@@ -275,5 +276,6 @@ class HackRFReceiver:
         if self.hackrf:
             try:
                 self.hackrf.close()
-            except:
+            except Exception:
+                # Silently ignore errors during cleanup as device may already be closed
                 pass
