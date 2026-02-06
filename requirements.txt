@@ -1,0 +1,7 @@
+# HackRF Python library for hardware interface
+# Note: pyhackrf might not be available via pip, may need manual installation
+# Alternative: use hackrf library or libhackrf bindings
+numpy>=1.21.0
+
+# Optional: For GUI implementation in the future
+# tkinter is included in Python standard library
